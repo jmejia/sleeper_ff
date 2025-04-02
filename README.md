@@ -1,24 +1,77 @@
-# SleeperFf
+# SleeperFF
 
-TODO: Delete this and the text below, and describe your gem
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sleeper_ff`. To experiment with that code, run `bin/console` for an interactive prompt.
+A Ruby toolkit for the Sleeper Fantasy Football API. This gem provides a simple and intuitive way to interact with Sleeper's API endpoints.
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+Add this line to your application's Gemfile:
 
-Install the gem and add to the application's Gemfile by executing:
+```ruby
+gem 'sleeper_ff'
+```
 
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+And then execute:
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+```bash
+$ bundle install
+```
 
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+Or install it yourself as:
+
+```bash
+$ gem install sleeper_ff
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+### Quick Start
+
+```ruby
+# Create a new client
+client = SleeperFF.new
+
+# Get user information
+user = client.user("username")
+puts user.display_name
+```
+
+### Configuration
+
+You can configure the client with custom options:
+
+```ruby
+# Configure with a custom user agent
+client = SleeperFF.new(user_agent: "My App v1.0")
+
+# Or configure globally
+SleeperFF.configure do |config|
+  config.user_agent = "My App v1.0"
+  config.api_endpoint = "https://api.sleeper.app/v1" # default
+end
+```
+
+### Available Methods
+
+#### Users
+
+```ruby
+# Get user by username
+user = client.user("username")
+
+# Access user attributes
+user.username       # => "username"
+user.user_id       # => "123456789"
+user.display_name  # => "Display Name"
+user.avatar       # => "avatar_url"
+```
+
+More endpoints coming soon:
+- Leagues
+- Rosters
+- Players
+- Drafts
+- Matchups
+- Transactions
 
 ## Development
 
@@ -28,7 +81,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sleeper_ff. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/sleeper_ff/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/jmejia/sleeper_ff. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/jmejia/sleeper_ff/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -36,4 +89,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the SleeperFf project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/sleeper_ff/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the SleeperFF project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/jmejia/sleeper_ff/blob/main/CODE_OF_CONDUCT.md).

@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sleeper.app/v1/user/sparlock
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SleeperFF Ruby Gem 0.1.0
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 02 Apr 2025 20:27:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - etag,date
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 76a80fe22e7c05a869b05e3c3230f139
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Last-Modified:
+      - Wed, 02 Apr 2025 20:27:59 GMT
+      Cf-Cache-Status:
+      - MISS
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 92a311f0dee6e653-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"avatar":"ed32c351521851d09978c25b801f7f7f","cookies":null,"created":null,"currencies":null,"data_updated":null,"deleted":null,"display_name":"sparlock","email":null,"is_bot":false,"metadata":null,"notifications":null,"pending":null,"phone":null,"real_name":null,"solicitable":null,"summoner_name":null,"summoner_region":null,"token":null,"user_id":"782008200219205632","username":"sparlock","verification":null}'
+  recorded_at: Wed, 02 Apr 2025 20:27:59 GMT
+recorded_with: VCR 6.3.1

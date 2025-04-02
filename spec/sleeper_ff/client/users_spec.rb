@@ -10,14 +10,17 @@ RSpec.describe SleeperFF::Client::Users do
 
         expect(user).not_to be_nil
         expect(user.username).to eq("sparlock")
+        expect(user.user_id).to eq("782008200219205632")
+        expect(user.display_name).to eq("sparlock")
+        expect(user.avatar).to be_a(String)
       end
     end
 
     context "when the user doesn't exist" do
       it "returns nil" do
-        not_a_user = client.user("definitely_not_a_real_user_123456789")
+        result = client.user("definitely_not_a_real_user_123456789")
 
-        expect(not_a_user).to eq(nil)
+        expect(result).to eq(nil)
       end
     end
   end

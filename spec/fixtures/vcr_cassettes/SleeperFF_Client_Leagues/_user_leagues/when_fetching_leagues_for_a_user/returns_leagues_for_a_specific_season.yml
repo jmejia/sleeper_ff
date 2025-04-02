@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sleeper.app/v1/user/782008200219205632/leagues/nfl/2024
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SleeperFF Ruby Gem 0.1.0
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 02 Apr 2025 23:02:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - etag,date
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 27d46cac1b5caf9119c18cbe297e0ebd
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Last-Modified:
+      - Wed, 02 Apr 2025 23:02:07 GMT
+      Cf-Cache-Status:
+      - MISS
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 92a3f3b6d9f4e651-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"last_pinned_message_id":"1167934872456241152","loser_bracket_id":1172492550116745216,"previous_league_id":"957401170459361280","last_message_text_map":null,"last_message_id":"1209956203262644224","season":"2024","last_message_attachment":null,"company_id":null,"metadata":{"auto_continue":"on","division_1":"Elders","division_1_avatar":"https://sleepercdn.com/uploads/f7bdd0fb6ebc76ffc2b0c65fa265b925","division_2":"Ministerial
+        Servants","division_2_avatar":"https://sleepercdn.com/uploads/4470fca76e7c5f1874c381141744b0ed","keeper_deadline":"2","latest_league_winner_roster_id":"11"},"settings":{"best_ball":0,"last_report":14,"waiver_budget":100,"disable_adds":0,"divisions":2,"capacity_override":0,"waiver_bid_min":0,"taxi_deadline":0,"draft_rounds":3,"reserve_allow_na":1,"start_week":1,"playoff_seed_type":0,"playoff_teams":6,"veto_votes_needed":5,"num_teams":12,"daily_waivers_hour":0,"playoff_type":1,"taxi_slots":0,"sub_start_time_eligibility":0,"last_scored_leg":17,"daily_waivers_days":5461,"sub_lock_if_starter_active":0,"playoff_week_start":15,"waiver_clear_days":2,"reserve_allow_doubtful":0,"commissioner_direct_invite":0,"veto_auto_poll":0,"reserve_allow_dnr":1,"taxi_allow_vets":0,"waiver_day_of_week":2,"playoff_round_type":0,"reserve_allow_out":1,"reserve_allow_sus":1,"veto_show_votes":0,"trade_deadline":14,"taxi_years":0,"daily_waivers":0,"faab_suggestions":0,"disable_trades":0,"pick_trading":1,"type":1,"max_keepers":5,"waiver_type":2,"max_subs":0,"league_average_match":0,"trade_review_days":0,"bench_lock":1,"offseason_adds":1,"leg":17,"reserve_slots":2,"reserve_allow_cov":1,"daily_waivers_last_ran":3},"status":"complete","group_id":null,"sport":"nfl","league_id":"1049102039810232320","shard":278,"last_author_display_name":"philsmars","scoring_settings":{"sack":1.0,"fgm_40_49":0.0,"fgm_yds":0.0,"pass_int":-1.0,"pts_allow_0":10.0,"pass_2pt":2.0,"st_td":6.0,"fgm_yds_over_30":0.1,"rec_td":6.0,"fgm_30_39":0.0,"xpmiss":-1.0,"rush_td":6.0,"def_4_and_stop":2.0,"fgm":3.0,"rec_2pt":2.0,"st_fum_rec":1.0,"fgmiss":0.0,"ff":1.0,"rec":0.5,"pts_allow_14_20":1.0,"fgm_0_19":0.0,"int":2.0,"def_st_fum_rec":1.0,"fum_lost":-2.0,"pts_allow_1_6":7.0,"rec_fd":0.0,"kr_yd":0.05,"rec_5_9":0.0,"fgm_20_29":0.0,"pts_allow_21_27":0.0,"xpm":1.0,"rec_40p":2.0,"def_3_and_out":0.5,"fgmiss_0_19":-1.0,"rush_2pt":2.0,"fum_rec":2.0,"def_st_td":6.0,"fgm_50p":0.0,"def_td":6.0,"safe":2.0,"pass_yd":0.04,"blk_kick":2.0,"pass_td":6.0,"rush_yd":0.1,"rush_40p":2.0,"pr_yd":0.05,"fum":0.0,"pts_allow_28_34":-1.0,"pts_allow_35p":-4.0,"fum_rec_td":6.0,"rec_yd":0.1,"rush_td_40p":0.0,"def_st_ff":1.0,"pts_allow_7_13":4.0,"st_ff":1.0},"name":"body
+        of elders","last_author_id":"854636540758994944","loser_bracket_overrides_id":null,"last_author_is_bot":false,"last_author_avatar":"f40177606f9a2fe6e841b737e0d37b8f","last_read_id":"1209956203262644224","season_type":"regular","last_message_time":1742838548059,"roster_positions":["QB","RB","RB","WR","WR","WR","TE","FLEX","SUPER_FLEX","K","DEF","BN","BN","BN","BN","BN","BN"],"draft_id":"1049102039810232321","total_rosters":12,"last_transaction_id":1169744899605024768,"avatar":"27581fa77f856d46553ba3562e7077d9","bracket_overrides_id":null,"bracket_id":1172492550108356608,"display_order":0}]'
+  recorded_at: Wed, 02 Apr 2025 23:02:07 GMT
+recorded_with: VCR 6.3.1

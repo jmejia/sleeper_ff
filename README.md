@@ -65,9 +65,39 @@ user.display_name  # => "Display Name"
 user.avatar       # => "avatar_url"
 ```
 
+### Leagues
+
+```ruby
+# Get all leagues for a user in a season
+leagues = client.user_leagues("username", 2023)
+
+# Get a specific league
+league = client.league("league_id")
+
+# Get all rosters in a league
+rosters = client.league_rosters("league_id")
+
+# Get all users in a league
+users = client.league_users("league_id")
+```
+
+You can access various attributes on the returned objects:
+
+```ruby
+# League attributes
+league.name          # => "My Fantasy League"
+league.season        # => "2023"
+league.settings      # => { scoring_settings: {...}, roster_settings: {...} }
+league.roster_positions  # => ["QB", "RB", "WR", "TE", "FLEX", "BN", ...]
+
+# Roster attributes
+roster.owner_id      # => "user_id"
+roster.players       # => ["player_id1", "player_id2", ...]
+roster.starters      # => ["player_id1", "player_id2", ...]
+roster.settings      # => { wins: 10, losses: 4, ... }
+```
+
 More endpoints coming soon:
-- Leagues
-- Rosters
 - Players
 - Drafts
 - Matchups

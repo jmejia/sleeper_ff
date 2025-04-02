@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sleeper.app/v1/league/957401170459361280/users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SleeperFF Ruby Gem 0.1.0
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 02 Apr 2025 23:10:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - etag,date
+      Cache-Control:
+      - public, s-maxage=300
+      X-Request-Id:
+      - 3ce4ef33403476e1256b8fca2d22b9f0
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Last-Modified:
+      - Wed, 02 Apr 2025 23:10:11 GMT
+      Cf-Cache-Status:
+      - MISS
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 92a3ff873a1d7b03-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"avatar":"ed32c351521851d09978c25b801f7f7f","display_name":"j-mejia","is_bot":false,"is_owner":true,"league_id":"957401170459361280","metadata":{"allow_sms":"on","allow_pn":"on","mascot_item_type_id_leg_13":"ref","team_name_update":"on","transaction_free_agent":"on","mascot_item_type_id_leg_17":"ref","mascot_item_type_id_leg_12":"ref","mascot_item_type_id_leg_1":"ref","player_like_pn":"on","mascot_item_type_id_leg_9":"ref","mascot_item_type_id_leg_4":"ref","show_mascots":"on","transaction_commissioner":"on","mascot_item_type_id_leg_3":"ref","mascot_item_type_id_leg_18":"ref","mascot_item_type_id_leg_10":"ref","mascot_item_type_id_leg_5":"ref","mascot_message":"on","trade_block_pn":"on","mascot_item_type_id_leg_7":"ref","mascot_item_type_id_leg_14":"ref","mascot_item_type_id_leg_6":"ref","user_message_pn":"on","mascot_item_type_id_leg_11":"ref","mascot_message_leg_3":"i
+        loathe you","mascot_item_type_id_leg_2":"ref","mention_pn":"on","player_nickname_update":"off","transaction_waiver":"on","mascot_item_type_id_leg_15":"ref","mascot_message_emotion_leg_1":"idle","team_name":"KylerBeesThatWereMolested","mascot_item_type_id_leg_8":"ref","avatar":"https://sleepercdn.com/uploads/518f31ae691de4b5cb8e1a0c62ac8a30.jpg","mascot_item_type_id_leg_16":"ref","transaction_trade":"on","mascot_message_emotion_leg_3":"dancing"},"settings":null,"user_id":"782008200219205632"},{"avatar":"c6230ff1262c32962b33185c23c5c29b","display_name":"bitsweet","is_bot":false,"is_owner":false,"league_id":"957401170459361280","metadata":{"allow_pn":"on","mascot_item_type_id_leg_13":"pumpkinpie","mascot_message_emotion_leg_6":"dancing","team_name_update":"on","join_voice_pn":"on","mascot_message_emotion_leg_7":"dancing","transaction_free_agent":"on","mascot_item_type_id_leg_17":"pumpkinpie","mascot_item_type_id_leg_12":"pumpkinpie","mascot_item_type_id_leg_1":"pumpkinpie","mascot_message_emotion_leg_4":"idle","player_like_pn":"on","mascot_message_emotion_leg_2":"victory","mascot_item_type_id_leg_9":"pizza","mascot_item_type_id_leg_4":"pumpkinpie","show_mascots":"on","transaction_commissioner":"on","mascot_item_type_id_leg_3":"pumpkinpie","mascot_item_type_id_leg_18":"pumpkinpie","mascot_item_type_id_leg_10":"pizza","mascot_item_type_id_leg_5":"pumpkinpie","mascot_message":"on","trade_block_pn":"on","mascot_item_type_id_leg_7":"pizza","mascot_item_type_id_leg_14":"pumpkinpie","mascot_item_type_id_leg_6":"pumpkinpie","user_message_pn":"on","mascot_item_type_id_leg_11":"pumpkinpie","mascot_item_type_id_leg_2":"pizza","mention_pn":"on","player_nickname_update":"on","transaction_waiver":"on","mascot_item_type_id_leg_15":"pumpkinpie","mascot_message_emotion_leg_1":"victory","team_name":"The
+        New Light Knights","mascot_message_emotion_leg_11":"dancing","mascot_item_type_id_leg_8":"pizza","avatar":"https://sleepercdn.com/uploads/354e5adde12caf53e2f3c9e6a5980dd3.jpg","mascot_item_type_id_leg_16":"pumpkinpie","transaction_trade":"on","mascot_message_emotion_leg_3":"idle"},"settings":null,"user_id":"782322921258487808"},{"avatar":"9a3f362e68eac3137b58d2aaee8af256","display_name":"TheCalamityHowler","is_bot":false,"is_owner":false,"league_id":"957401170459361280","metadata":{"allow_pn":"on","allow_sms":"on","mascot_message_leg_2":"","mascot_message_leg_3":"","mention_pn":"on","team_name":"Governing
+        Body Count"},"settings":null,"user_id":"854521879468281856"},{"avatar":"7938bfefb1e58ec6b70c22ad1e12e832","display_name":"dennismiller","is_bot":false,"is_owner":false,"league_id":"957401170459361280","metadata":{"allow_sms":"on","mascot_message_leg_2":"I
+        will beat you.","allow_pn":"on","mascot_item_type_id_leg_13":"chum","mascot_message_emotion_leg_10":"victory","mascot_message_emotion_leg_6":"dancing","team_name_update":"on","join_voice_pn":"on","mascot_message_emotion_leg_7":"idle","transaction_free_agent":"on","mascot_item_type_id_leg_17":"chum","mascot_item_type_id_leg_12":"chum","mascot_item_type_id_leg_1":"chum","mascot_message_emotion_leg_4":"taunting","player_like_pn":"on","mascot_message_emotion_leg_2":"taunting","mascot_item_type_id_leg_9":"chum","mascot_item_type_id_leg_4":"chum","mascot_message_leg_8":"","show_mascots":"on","transaction_commissioner":"on","mascot_item_type_id_leg_3":"chum","mascot_item_type_id_leg_18":"chum","mascot_item_type_id_leg_10":"chum","mascot_item_type_id_leg_5":"chum","mascot_message_emotion_leg_8":"dancing","mascot_message":"on","trade_block_pn":"on","mascot_item_type_id_leg_7":"chum","mascot_item_type_id_leg_14":"chum","mascot_message_leg_1":"I
+        am taunting you.","mascot_item_type_id_leg_6":"chum","mascot_message_emotion_leg_12":"victory","user_message_pn":"on","mascot_item_type_id_leg_11":"chum","mascot_message_leg_3":"you
+        are gonna get disfellowshipped","mascot_item_type_id_leg_2":"chum","mention_pn":"on","player_nickname_update":"on","mascot_message_leg_4":"I
+        am taunting you.","transaction_waiver":"on","mascot_item_type_id_leg_15":"chum","mascot_message_emotion_leg_1":"idle","team_name":"Jehovah
+        Goedert","mascot_message_emotion_leg_11":"taunting","mascot_item_type_id_leg_8":"chum","avatar":"https://sleepercdn.com/uploads/63fb09fa49ec6e03a8022860aff0fac9","mascot_item_type_id_leg_16":"chum","transaction_trade":"on","mascot_message_emotion_leg_5":"taunting","mascot_message_emotion_leg_3":"taunting"},"settings":null,"user_id":"854612562262761472"},{"avatar":"f40177606f9a2fe6e841b737e0d37b8f","display_name":"philsmars","is_bot":false,"is_owner":false,"league_id":"957401170459361280","metadata":{"allow_pn":"on","allow_sms":"on","avatar":"https://sleepercdn.com/uploads/32da388901ad5b47bd4768788d52acd3.jpg","mascot_item_type_id_leg_1":"jessica","mascot_item_type_id_leg_10":"troll","mascot_item_type_id_leg_11":"troll","mascot_item_type_id_leg_12":"troll","mascot_item_type_id_leg_13":"jessica","mascot_item_type_id_leg_14":"troll","mascot_item_type_id_leg_15":"troll","mascot_item_type_id_leg_16":"troll","mascot_item_type_id_leg_17":"troll","mascot_item_type_id_leg_18":"troll","mascot_item_type_id_leg_2":"jessica","mascot_item_type_id_leg_3":"jessica","mascot_item_type_id_leg_4":"troll","mascot_item_type_id_leg_5":"troll","mascot_item_type_id_leg_6":"troll","mascot_item_type_id_leg_7":"troll","mascot_item_type_id_leg_8":"troll","mascot_item_type_id_leg_9":"troll","mascot_message_emotion_leg_1":"idle","mascot_message_emotion_leg_13":"taunting","mascot_message_emotion_leg_14":"idle","mascot_message_emotion_leg_4":"victory","mascot_message_leg_4":"That
+        Kamara blunder could be costly","mention_pn":"on","show_mascots":"on","team_name":"FaithlessIndiscreetSlave"},"settings":null,"user_id":"854636540758994944"},{"avatar":"a566ed3d35106c62726c5314c42d63f1","display_name":"Turfdog99","is_bot":false,"is_owner":false,"league_id":"957401170459361280","metadata":{"allow_pn":"on","mascot_item_type_id_leg_1":"doge","mascot_item_type_id_leg_10":"doge","mascot_item_type_id_leg_11":"doge","mascot_item_type_id_leg_12":"doge","mascot_item_type_id_leg_13":"doge","mascot_item_type_id_leg_14":"doge","mascot_item_type_id_leg_15":"doge","mascot_item_type_id_leg_16":"doge","mascot_item_type_id_leg_17":"doge","mascot_item_type_id_leg_18":"doge","mascot_item_type_id_leg_2":"doge","mascot_item_type_id_leg_3":"doge","mascot_item_type_id_leg_4":"doge","mascot_item_type_id_leg_5":"doge","mascot_item_type_id_leg_6":"doge","mascot_item_type_id_leg_7":"doge","mascot_item_type_id_leg_8":"doge","mascot_item_type_id_leg_9":"doge","mascot_message_emotion_leg_1":"idle","mascot_message_emotion_leg_3":"idle","mascot_message_emotion_leg_4":"idle","mascot_message_emotion_leg_6":"taunting","mascot_message_emotion_leg_7":"taunting","mascot_message_emotion_leg_8":"idle","mascot_message_leg_3":"you
+        suck!","mascot_message_leg_4":"","mascot_message_leg_6":"its over :(","mascot_message_leg_8":"u
+        suck","mention_pn":"on","show_mascots":"on","team_name":"Wallkillers"},"settings":null,"user_id":"854788686888415232"},{"avatar":"e6679d46f764c1e815388aac1136ffb2","display_name":"mvorpagel","is_bot":false,"is_owner":false,"league_id":"957401170459361280","metadata":{"allow_pn":"on","mascot_message_leg_4":"","mention_pn":"on","team_name":"The
+        1975ers"},"settings":null,"user_id":"854846099012308992"},{"avatar":"f0edbf4278f53f9425db175073df6584","display_name":"Disfellowclipping","is_bot":false,"is_owner":false,"league_id":"957401170459361280","metadata":{"allow_pn":"on","avatar":"https://sleepercdn.com/uploads/269ee7c47d96f8ef58564757768f7fb2.jpg","mascot_message_leg_3":"","mascot_message_leg_6":"","mention_pn":"on","team_name":"Halfback
+        to Reinstatement"},"settings":null,"user_id":"854853347642032128"},{"avatar":"e7af4deab0289b4f5505646424895246","display_name":"kunicki","is_bot":false,"is_owner":false,"league_id":"957401170459361280","metadata":{"allow_pn":"on","avatar":"https://sleepercdn.com/uploads/172859b2cfd58391b11f600069e77bac","mascot_message_leg_1":"","mention_pn":"on","team_name":"Mic
+        Duty Boners"},"settings":null,"user_id":"854925387283693568"},{"avatar":"ff0e0b9dc2925cf845efa2a59c0b8363","display_name":"VRHolinka","is_bot":false,"is_owner":false,"league_id":"957401170459361280","metadata":{"allow_pn":"on","mascot_item_type_id_leg_13":"trash","mascot_message_emotion_leg_6":"taunting","team_name_update":"off","join_voice_pn":"on","transaction_free_agent":"off","mascot_item_type_id_leg_17":"trash","mascot_item_type_id_leg_12":"trash","mascot_item_type_id_leg_1":"trash","player_like_pn":"on","mascot_message_emotion_leg_2":"idle","mascot_item_type_id_leg_9":"trash","mascot_item_type_id_leg_4":"trash","show_mascots":"on","transaction_commissioner":"on","mascot_item_type_id_leg_3":"trash","mascot_item_type_id_leg_18":"trash","mascot_item_type_id_leg_10":"trash","mascot_item_type_id_leg_5":"trash","mascot_message":"on","trade_block_pn":"off","mascot_item_type_id_leg_7":"trash","mascot_item_type_id_leg_14":"trash","mascot_item_type_id_leg_6":"trash","user_message_pn":"on","mascot_item_type_id_leg_11":"trash","mascot_message_leg_3":"","mascot_item_type_id_leg_2":"trash","mention_pn":"on","player_nickname_update":"off","transaction_waiver":"on","mascot_item_type_id_leg_15":"trash","mascot_message_emotion_leg_1":"dancing","team_name":"Foreskin
+        Shivers","mascot_item_type_id_leg_8":"trash","avatar":"https://sleepercdn.com/uploads/f0bfe4a3f4d7ec96912407249a7ece81.jpg","mascot_item_type_id_leg_16":"trash","transaction_trade":"off"},"settings":null,"user_id":"856032380761272320"},{"avatar":"b84569bb8e490ded4cba25718bc805f9","display_name":"extraa","is_bot":false,"is_owner":null,"league_id":"957401170459361280","metadata":{"allow_pn":"off","allow_sms":"on","avatar":"https://sleepercdn.com/uploads/c24ca74a75fd488cb23c4bc57fad05ad.jpg","mascot_message":"off","mention_pn":"on","player_like_pn":"on","player_nickname_update":"off","team_name":"Two
+        She(cago) Bears","team_name_update":"on","trade_block_pn":"on","transaction_commissioner":"on","transaction_free_agent":"on","transaction_trade":"on","transaction_waiver":"on","user_message_pn":"on"},"settings":null,"user_id":"987086402963746816"},{"avatar":"4f4090e5e9c3941414db40a871e3e909","display_name":"Toobdetermined","is_bot":false,"is_owner":null,"league_id":"957401170459361280","metadata":{"allow_pn":"on","allow_sms":"on","avatar":"https://sleepercdn.com/uploads/ac0987fdfeb4a19dd2a46ade02fb2cc0.jpg","mention_pn":"on","show_mascots":"off","team_name":"The
+        Impromptu Assignments"},"settings":null,"user_id":"987746245718417408"}]'
+  recorded_at: Wed, 02 Apr 2025 23:10:11 GMT
+recorded_with: VCR 6.3.1

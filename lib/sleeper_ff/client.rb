@@ -30,11 +30,6 @@ module SleeperFF
       request :get, url, options
     end
 
-    # Make a HTTP POST request
-    def post(url, options = {})
-      request :post, url, options
-    end
-
     private
 
     def request(method, path, data, options = {})

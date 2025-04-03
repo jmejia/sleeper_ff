@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 3.0.0"
 
   spec.require_paths = ["lib"]
+  spec.files = Dir.glob("{bin,lib}/**/*") + %w[LICENSE.txt README.md]
 
   spec.add_dependency "faraday", ">= 1.0"
   spec.add_dependency "sawyer", "~> 0.9.0"

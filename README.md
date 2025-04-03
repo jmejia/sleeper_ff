@@ -1,6 +1,6 @@
 # SleeperFF
 
-A Ruby toolkit for the Sleeper Fantasy Football API. This gem provides a simple and intuitive way to interact with Sleeper's API endpoints.
+A Ruby toolkit for the Sleeper Fantasy Football API. This gem provides a simple way to interact with Sleeper's API endpoints.
 
 ## Installation
 

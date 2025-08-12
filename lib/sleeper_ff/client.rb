@@ -4,12 +4,14 @@ require "sawyer"
 require "sleeper_ff/configurable"
 require "sleeper_ff/client/users"
 require "sleeper_ff/client/leagues"
+require "sleeper_ff/client/players"
 
 module SleeperFF
   class Client
     include SleeperFF::Configurable
     include SleeperFF::Client::Users
     include SleeperFF::Client::Leagues
+    include SleeperFF::Client::Players
 
     # Header keys that can be passed in options hash
     CONVENIENCE_HEADERS = Set.new([:accept, :content_type])

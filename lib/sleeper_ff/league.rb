@@ -7,6 +7,10 @@ module SleeperFF
       @client = client
     end
 
+    def matchups(week)
+      @client.league_matchups(@data.league_id, week)
+    end
+
     def drafts
       @client.league_drafts(@data.league_id)
     end

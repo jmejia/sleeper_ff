@@ -42,6 +42,15 @@ module SleeperFF
         get "league/#{league_id}/users"
       end
 
+      # Get matchups for a specific week in a league
+      #
+      # @param league_id [String] League ID
+      # @param week [Integer] Week number
+      # @return [Array<Sawyer::Resource>] Array of matchup objects
+      def league_matchups(league_id, week)
+        get "league/#{league_id}/matchups/#{week}"
+      end
+
       # Get all drafts for a league
       #
       # @param league_id [String] League ID

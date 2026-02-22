@@ -59,6 +59,18 @@ RSpec.describe SleeperFF::Client::Leagues do
     end
   end
 
+  describe "#league_matchups", :vcr do
+    it "returns matchups for a week" do
+      matchups = client.league_matchups("957401170459361280", 1)
+
+      expect(matchups).to be_an(Array)
+      expect(matchups.first).to respond_to(:roster_id)
+      expect(matchups.first).to respond_to(:matchup_id)
+      expect(matchups.first).to respond_to(:points)
+      expect(matchups.first).to respond_to(:starters)
+    end
+  end
+
   describe "#league_drafts", :vcr do
     it "returns all drafts for a league" do
       drafts = client.league_drafts("957401170459361280")

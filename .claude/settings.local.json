@@ -5,6 +5,7 @@
       "Bash(bundle exec rspec*)",
       "Bash(git add*)",
       "Bash(git commit*)",
+      "Bash(git commit -m*)",
       "Bash(git status*)",
       "Bash(git diff*)",
       "Bash(git log*)",

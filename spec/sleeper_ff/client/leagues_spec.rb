@@ -59,6 +59,19 @@ RSpec.describe SleeperFF::Client::Leagues do
     end
   end
 
+  describe "#league_traded_picks", :vcr do
+    it "returns all traded picks in a league" do
+      traded_picks = client.league_traded_picks("957401170459361280")
+
+      expect(traded_picks).to be_an(Array)
+      expect(traded_picks.first).to respond_to(:season)
+      expect(traded_picks.first).to respond_to(:round)
+      expect(traded_picks.first).to respond_to(:roster_id)
+      expect(traded_picks.first).to respond_to(:previous_owner_id)
+      expect(traded_picks.first).to respond_to(:owner_id)
+    end
+  end
+
   describe "#league_transactions", :vcr do
     it "returns transactions for a round" do
       transactions = client.league_transactions("957401170459361280", 1)

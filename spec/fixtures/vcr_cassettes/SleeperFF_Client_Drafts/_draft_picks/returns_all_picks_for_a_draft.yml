@@ -1,0 +1,27 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sleeper.app/v1/draft/957401170459361281/picks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SleeperFF Ruby Gem 0.1.0
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '[{"player_id":"4046","picked_by":"782008200219205632","roster_id":1,"round":1,"draft_slot":1,"pick_no":1,"metadata":{"years_exp":"7","team":"KC","status":"Active","sport":"nfl","position":"RB","player_id":"4046","number":"27","news_updated":"1693400000000","last_name":"Hunt","injury_status":"","first_name":"Kareem","amount":"0"},"is_keeper":null,"draft_id":"957401170459361281"},{"player_id":"4035","picked_by":"987746245718417408","roster_id":2,"round":1,"draft_slot":2,"pick_no":2,"metadata":{"years_exp":"7","team":"PHI","status":"Active","sport":"nfl","position":"RB","player_id":"4035","number":"26","news_updated":"1693400000000","last_name":"Sanders","injury_status":"","first_name":"Miles","amount":"0"},"is_keeper":null,"draft_id":"957401170459361281"}]'
+  recorded_at: Wed, 02 Apr 2025 23:08:00 GMT
+recorded_with: VCR 6.3.1

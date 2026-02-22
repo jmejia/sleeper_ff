@@ -79,6 +79,11 @@ rosters = client.league_rosters("league_id")
 
 # Get all users in a league
 users = client.league_users("league_id")
+
+# Get all drafts for a league
+drafts = client.league_drafts("league_id")
+# or via the league object
+drafts = league.drafts
 ```
 
 You can access various attributes on the returned objects:
@@ -97,9 +102,55 @@ roster.starters      # => ["player_id1", "player_id2", ...]
 roster.settings      # => { wins: 10, losses: 4, ... }
 ```
 
+### Drafts
+
+```ruby
+# Get all drafts for a user in a season
+drafts = client.user_drafts("user_id", 2023)
+
+# Get a specific draft
+draft = client.draft("draft_id")
+
+# Get all picks in a draft
+picks = client.draft_picks("draft_id")
+# or via the draft object
+picks = draft.picks
+
+# Get all traded picks in a draft
+traded_picks = client.draft_traded_picks("draft_id")
+# or via the draft object
+traded_picks = draft.traded_picks
+```
+
+You can access various attributes on draft objects:
+
+```ruby
+# Draft attributes
+draft.draft_id    # => "917001170459361281"
+draft.league_id   # => "917001170459361280"
+draft.type        # => "snake"
+draft.status      # => "complete"
+draft.season      # => "2023"
+draft.settings    # => { teams: 12, rounds: 15, ... }
+draft.draft_order # => { "user_id" => slot, ... }
+
+# Pick attributes
+pick.player_id    # => "4046"
+pick.picked_by    # => "user_id"
+pick.round        # => 1
+pick.pick_no      # => 1
+pick.metadata     # => { first_name: "Kareem", last_name: "Hunt", ... }
+
+# Traded pick attributes
+traded_pick.season            # => "2023"
+traded_pick.round             # => 3
+traded_pick.roster_id         # => 1
+traded_pick.previous_owner_id # => 3
+traded_pick.owner_id          # => 5
+```
+
 More endpoints coming soon:
 - Players
-- Drafts
 - Matchups
 - Transactions
 

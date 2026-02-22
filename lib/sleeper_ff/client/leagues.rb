@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require "sleeper_ff/league"
+require "sleeper_ff/draft"
+
 module SleeperFF
   class Client
     module Leagues
@@ -15,9 +18,12 @@ module SleeperFF
       # Get a specific league
       #
       # @param league_id [String] League ID
-      # @return [Sawyer::Resource] League information
+      # @return [SleeperFF::League] League object
       def league(league_id)
-        get "league/#{league_id}"
+        data = get "league/#{league_id}"
+        return nil if data.nil?
+
+        SleeperFF::League.new(data, self)
       end
 
       # Get all rosters in a league
@@ -34,6 +40,17 @@ module SleeperFF
       # @return [Array<Sawyer::Resource>] Array of user information
       def league_users(league_id)
         get "league/#{league_id}/users"
+      end
+
+      # Get all drafts for a league
+      #
+      # @param league_id [String] League ID
+      # @return [Array<SleeperFF::Draft>] Array of draft objects
+      def league_drafts(league_id)
+        data = get "league/#{league_id}/drafts"
+        return [] if data.nil?
+
+        data.map { |d| SleeperFF::Draft.new(d, self) }
       end
     end
   end

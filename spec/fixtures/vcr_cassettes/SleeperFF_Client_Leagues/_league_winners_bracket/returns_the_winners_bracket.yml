@@ -1,0 +1,27 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sleeper.app/v1/league/957401170459361280/winners_bracket
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SleeperFF Ruby Gem 0.1.0
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '[{"r":1,"m":1,"t1":1,"t2":6,"w":1,"l":6,"t1_from":null,"t2_from":null},{"r":1,"m":2,"t1":2,"t2":5,"w":2,"l":5,"t1_from":null,"t2_from":null},{"r":1,"m":3,"t1":3,"t2":4,"w":3,"l":4,"t1_from":null,"t2_from":null},{"r":2,"m":4,"t1":null,"t2":null,"w":null,"l":null,"t1_from":{"w":1},"t2_from":{"w":2}},{"r":2,"m":5,"t1":null,"t2":null,"w":null,"l":null,"t1_from":{"w":3},"t2_from":{"l":4}},{"r":3,"m":6,"t1":null,"t2":null,"w":null,"l":null,"t1_from":{"w":4},"t2_from":{"w":5}}]'
+  recorded_at: Wed, 02 Apr 2025 23:11:00 GMT
+recorded_with: VCR 6.3.1

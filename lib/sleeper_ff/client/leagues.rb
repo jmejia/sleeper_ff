@@ -42,6 +42,22 @@ module SleeperFF
         get "league/#{league_id}/users"
       end
 
+      # Get the winners playoff bracket for a league
+      #
+      # @param league_id [String] League ID
+      # @return [Array<Sawyer::Resource>] Array of bracket matchup objects
+      def league_winners_bracket(league_id)
+        get "league/#{league_id}/winners_bracket"
+      end
+
+      # Get the losers playoff bracket for a league
+      #
+      # @param league_id [String] League ID
+      # @return [Array<Sawyer::Resource>] Array of bracket matchup objects
+      def league_losers_bracket(league_id)
+        get "league/#{league_id}/losers_bracket"
+      end
+
       # Get matchups for a specific week in a league
       #
       # @param league_id [String] League ID

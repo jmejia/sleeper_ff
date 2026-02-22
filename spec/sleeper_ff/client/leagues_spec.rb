@@ -59,6 +59,18 @@ RSpec.describe SleeperFF::Client::Leagues do
     end
   end
 
+  describe "#league_winners_bracket", :vcr do
+    it "returns the winners bracket" do
+      bracket = client.league_winners_bracket("957401170459361280")
+
+      expect(bracket).to be_an(Array)
+      expect(bracket.first).to respond_to(:r)
+      expect(bracket.first).to respond_to(:m)
+      expect(bracket.first).to respond_to(:t1)
+      expect(bracket.first).to respond_to(:t2)
+    end
+  end
+
   describe "#league_matchups", :vcr do
     it "returns matchups for a week" do
       matchups = client.league_matchups("957401170459361280", 1)

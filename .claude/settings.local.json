@@ -10,7 +10,8 @@
       "Bash(git diff*)",
       "Bash(git log*)",
       "Bash(mkdir -p*)",
-      "Bash(pbcopy*)"
+      "Bash(pbcopy*)",
+      "Bash(bundle exec rake release)"
     ]
   }
 }

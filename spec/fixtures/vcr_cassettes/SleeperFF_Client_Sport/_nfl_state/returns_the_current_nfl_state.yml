@@ -1,0 +1,27 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sleeper.app/v1/state/nfl
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SleeperFF Ruby Gem 0.1.0
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '{"week":1,"season_type":"regular","season":"2024","previous_season":"2023","leg":1,"league_season":"2024","league_create_season":"2024","display_week":1}'
+  recorded_at: Wed, 02 Apr 2025 23:16:00 GMT
+recorded_with: VCR 6.3.1

@@ -131,4 +131,4 @@ RSpec.describe SleeperFF::Client::Leagues do
       expect(drafts.first).to respond_to(:type)
     end
   end
-end 
+end

@@ -24,4 +24,4 @@ RSpec.describe SleeperFF::Client::Users do
       end
     end
   end
-end 
+end

@@ -27,4 +27,4 @@ module SleeperFF
       self
     end
   end
-end 
+end

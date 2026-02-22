@@ -2,9 +2,9 @@
 
 module SleeperFF
   module Default
-    API_ENDPOINT = "https://api.sleeper.app/v1".freeze
+    API_ENDPOINT = "https://api.sleeper.app/v1"
     USER_AGENT = "SleeperFF Ruby Gem #{SleeperFF::VERSION}".freeze
-    MEDIA_TYPE = "application/json".freeze
+    MEDIA_TYPE = "application/json"
 
     class << self
       def api_endpoint
@@ -20,4 +20,4 @@ module SleeperFF
       end
     end
   end
-end 
+end

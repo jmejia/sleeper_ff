@@ -1,0 +1,27 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sleeper.app/v1/league/957401170459361280/matchups/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SleeperFF Ruby Gem 0.1.0
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '[{"starters":["4046","4035","2449","6794","5846","7523","4034","0","DEF"],"roster_id":1,"players":["4046","4035","2449","6794","5846","7523","4034","3164","DEF"],"matchup_id":1,"points":142.5,"custom_points":null},{"starters":["4881","4866","5012","5103","6794","4199","4017","0","DEF"],"roster_id":2,"players":["4881","4866","5012","5103","6794","4199","4017","2374","DEF"],"matchup_id":1,"points":118.2,"custom_points":null}]'
+  recorded_at: Wed, 02 Apr 2025 23:10:00 GMT
+recorded_with: VCR 6.3.1

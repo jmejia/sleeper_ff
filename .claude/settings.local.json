@@ -2,11 +2,15 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:docs.sleeper.com)",
-      "Bash(bundle exec rspec spec/sleeper_ff/client/leagues_spec.rb 2>&1)",
-      "Bash(chmod +x /Users/jm/code/sleeper_ff/.git/hooks/commit-msg)",
-      "Bash(bundle exec rspec spec/sleeper_ff/client/drafts_spec.rb spec/sleeper_ff/client/leagues_spec.rb 2>&1)",
-      "Bash(bundle exec rspec 2>&1)",
-      "Bash(git add \\\\\n  README.md \\\\\n  lib/sleeper_ff/client.rb \\\\\n  lib/sleeper_ff/client/leagues.rb \\\\\n  lib/sleeper_ff/client/drafts.rb \\\\\n  lib/sleeper_ff/draft.rb \\\\\n  lib/sleeper_ff/league.rb \\\\\n  spec/sleeper_ff/client/leagues_spec.rb \\\\\n  spec/sleeper_ff/client/drafts_spec.rb \\\\\n  spec/fixtures/vcr_cassettes/SleeperFF_Client_Drafts/ \\\\\n  spec/fixtures/vcr_cassettes/SleeperFF_Client_Leagues/_league_drafts/ \\\\\n  .claude/ && \\\\\ngit commit -m \"$\\(cat <<'EOF'\nAdd draft endpoints with League and Draft resource objects\n\nImplements all Sleeper draft API endpoints:\n- GET /user/:id/drafts/nfl/:season via client.user_drafts\n- GET /draft/:id via client.draft\n- GET /draft/:id/picks via client.draft_picks / draft.picks\n- GET /draft/:id/traded_picks via client.draft_traded_picks / draft.traded_picks\n- GET /league/:id/drafts via client.league_drafts / league.drafts\n\nIntroduces SleeperFF::League and SleeperFF::Draft resource classes that\nwrap raw API data and expose lazy association methods \\(e.g. league.drafts,\ndraft.picks\\) without additional HTTP calls until accessed.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(bundle exec rspec*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(git commit -m*)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(mkdir -p*)",
+      "Bash(pbcopy*)"
     ]
   }
 }

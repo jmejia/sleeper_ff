@@ -1,0 +1,27 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sleeper.app/v1/league/957401170459361280/transactions/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SleeperFF Ruby Gem 0.1.0
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '[{"type":"trade","transaction_id":"958000000000000001","status_updated":1694000000000,"status":"complete","settings":null,"roster_ids":[1,2],"metadata":null,"leg":1,"drops":null,"creator":"782008200219205632","created":1694000000000,"consenter_ids":[1,2],"adds":{"4046":2,"4035":1},"waiver_budget":[{"sender":1,"receiver":2,"amount":0}]},{"type":"waiver","transaction_id":"958000000000000002","status_updated":1694100000000,"status":"complete","settings":{"waiver_bid":10,"priority":3},"roster_ids":[3],"metadata":null,"leg":1,"drops":{"5012":3},"creator":"user3id","created":1694100000000,"consenter_ids":[3],"adds":{"6794":3},"waiver_budget":null}]'
+  recorded_at: Wed, 02 Apr 2025 23:13:00 GMT
+recorded_with: VCR 6.3.1

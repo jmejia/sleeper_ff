@@ -6,6 +6,7 @@ require "sleeper_ff/client/users"
 require "sleeper_ff/client/leagues"
 require "sleeper_ff/client/drafts"
 require "sleeper_ff/client/players"
+require "sleeper_ff/client/sport"
 
 module SleeperFF
   class Client
@@ -14,6 +15,7 @@ module SleeperFF
     include SleeperFF::Client::Leagues
     include SleeperFF::Client::Drafts
     include SleeperFF::Client::Players
+    include SleeperFF::Client::Sport
 
     # Header keys that can be passed in options hash
     CONVENIENCE_HEADERS = Set.new([:accept, :content_type])

@@ -169,9 +169,17 @@ trending.first.player_id  # => "4046"
 trending.first.count      # => 1842
 ```
 
-More endpoints coming soon:
-- Matchups
-- Transactions
+### Sport State
+
+```ruby
+# Get the current NFL season state
+state = client.nfl_state
+
+state.week          # => 1
+state.season        # => "2024"
+state.season_type   # => "regular"
+state.display_week  # => 1
+```
 
 ## Development
 

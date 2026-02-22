@@ -26,6 +26,7 @@ RSpec.describe SleeperFF::Client::Leagues do
         expect(league).to respond_to(:name)
         expect(league).to respond_to(:season)
         expect(league).to respond_to(:settings)
+        expect(league).to respond_to(:drafts)
       end
     end
 
@@ -55,6 +56,18 @@ RSpec.describe SleeperFF::Client::Leagues do
       expect(users).to be_an(Array)
       expect(users.first).to respond_to(:user_id)
       expect(users.first).to respond_to(:display_name)
+    end
+  end
+
+  describe "#league_drafts", :vcr do
+    it "returns all drafts for a league" do
+      drafts = client.league_drafts("957401170459361280")
+
+      expect(drafts).to be_an(Array)
+      expect(drafts.first).to respond_to(:draft_id)
+      expect(drafts.first).to respond_to(:league_id)
+      expect(drafts.first).to respond_to(:status)
+      expect(drafts.first).to respond_to(:type)
     end
   end
 end 

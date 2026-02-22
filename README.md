@@ -149,8 +149,27 @@ traded_pick.previous_owner_id # => 3
 traded_pick.owner_id          # => 5
 ```
 
+### Players
+
+```ruby
+# Fetch all NFL players (response is ~5MB, cache locally and call sparingly)
+players = client.players
+
+# Get trending players by add or drop activity
+trending = client.trending_players("add")
+trending = client.trending_players("drop")
+
+# Optional parameters
+trending = client.trending_players("add", lookback_hours: 48, limit: 10)
+```
+
+```ruby
+# Trending player attributes
+trending.first.player_id  # => "4046"
+trending.first.count      # => 1842
+```
+
 More endpoints coming soon:
-- Players
 - Matchups
 - Transactions
 

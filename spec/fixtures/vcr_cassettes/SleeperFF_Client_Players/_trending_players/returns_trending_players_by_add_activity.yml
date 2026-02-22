@@ -1,0 +1,27 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sleeper.app/v1/players/nfl/trending/add?limit=25&lookback_hours=24
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SleeperFF Ruby Gem 0.1.0
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '[{"player_id":"4046","count":1842},{"player_id":"4035","count":1654},{"player_id":"2449","count":1423},{"player_id":"6794","count":1201},{"player_id":"5846","count":987}]'
+  recorded_at: Wed, 02 Apr 2025 23:15:00 GMT
+recorded_with: VCR 6.3.1

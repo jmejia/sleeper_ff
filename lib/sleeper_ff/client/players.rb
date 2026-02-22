@@ -17,7 +17,7 @@ module SleeperFF
       # @param limit [Integer] Number of results to return (default 25)
       # @return [Array<Sawyer::Resource>] Array of trending player objects
       def trending_players(type, lookback_hours: 24, limit: 25)
-        get "players/nfl/trending/#{type}", query: { lookback_hours: lookback_hours, limit: limit }
+        get "players/nfl/trending/#{type}", query: {lookback_hours: lookback_hours, limit: limit}
       end
     end
   end

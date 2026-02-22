@@ -27,4 +27,4 @@ module SleeperFF
 
   # Raised when Sleeper returns a 503 HTTP status code
   class ServiceUnavailable < Error; end
-end 
+end

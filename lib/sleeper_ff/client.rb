@@ -40,14 +40,14 @@ module SleeperFF
 
     def request(method, path, data, options = {})
       if data.is_a?(Hash)
-        options[:query]   = data.delete(:query) || {}
+        options[:query] = data.delete(:query) || {}
         options[:headers] = data.delete(:headers) || {}
-        if accept = data.delete(:accept)
+        if (accept = data.delete(:accept))
           options[:headers][:accept] = accept
         end
       end
 
-      @last_response = response = agent.call(method, URI::Parser.new.escape(path.to_s), data, options)
+      @last_response = response = agent.call(method, URI::DEFAULT_PARSER.escape(path.to_s), data, options)
       response.data
     end
 
@@ -58,4 +58,4 @@ module SleeperFF
       end
     end
   end
-end 
+end

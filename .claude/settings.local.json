@@ -11,7 +11,10 @@
       "Bash(git log*)",
       "Bash(mkdir -p*)",
       "Bash(pbcopy*)",
-      "Bash(bundle exec rake release)"
+      "Bash(bundle exec rake release)",
+      "Bash(bundle exec rake standard:fix 2>&1)",
+      "Bash(bundle exec rake standard 2>&1)",
+      "Bash(bundle exec rake 2>&1 | tail*)"
     ]
   }
 }

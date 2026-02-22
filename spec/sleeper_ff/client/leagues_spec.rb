@@ -59,6 +59,18 @@ RSpec.describe SleeperFF::Client::Leagues do
     end
   end
 
+  describe "#league_transactions", :vcr do
+    it "returns transactions for a round" do
+      transactions = client.league_transactions("957401170459361280", 1)
+
+      expect(transactions).to be_an(Array)
+      expect(transactions.first).to respond_to(:transaction_id)
+      expect(transactions.first).to respond_to(:type)
+      expect(transactions.first).to respond_to(:status)
+      expect(transactions.first).to respond_to(:roster_ids)
+    end
+  end
+
   describe "#league_losers_bracket", :vcr do
     it "returns the losers bracket" do
       bracket = client.league_losers_bracket("957401170459361280")

@@ -42,6 +42,23 @@ module SleeperFF
         get "league/#{league_id}/users"
       end
 
+      # Get transactions for a specific round (week) in a league
+      #
+      # @param league_id [String] League ID
+      # @param round [Integer] Week/round number
+      # @return [Array<Sawyer::Resource>] Array of transaction objects
+      def league_transactions(league_id, round)
+        get "league/#{league_id}/transactions/#{round}"
+      end
+
+      # Get all traded picks in a league
+      #
+      # @param league_id [String] League ID
+      # @return [Array<Sawyer::Resource>] Array of traded pick objects
+      def league_traded_picks(league_id)
+        get "league/#{league_id}/traded_picks"
+      end
+
       # Get the winners playoff bracket for a league
       #
       # @param league_id [String] League ID
